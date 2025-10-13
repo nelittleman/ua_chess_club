@@ -366,7 +366,7 @@ textarea {
 ----------------------------- */
 .hero {
   position: relative;
-  background: url("../images/chess-board.jpeg") center/cover no-repeat;
+  background: url("chess-board.jpeg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 6rem 2rem;
