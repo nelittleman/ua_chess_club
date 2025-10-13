@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for upcoming UA Wildcat Chess Club tournaments and competitions." />
+  <meta name="keywords" content="UA Chess Club, University of Arizona, tournament registration, chess competition" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Tournaments | UA Wildcat Chess Club</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="UA Wildcat Chess Club logo" width="50" height="50" />
+      <h1>UA Wildcat Chess Club</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="membership.html">Become a Member</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="tournaments.html" aria-current="page">Tournaments</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero tournament-hero">
+    <div class="hero-text">
+      <h2>Register for Upcoming Tournaments</h2>
+      <p>Ready to compete? Sign up below to participate in our next UA Wildcat Chess Club tournament.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- Info Section -->
+    <section class="card">
+      <h2>About the Tournament</h2>
+      <p>
+        The Fall Rapid Chess Tournament is open to all University of Arizona students, staff, and alumni.
+        Matches will follow a 15+10 time control with Swiss-style pairings. Prizes are awarded to the top three finishers.
+      </p>
+      <p><strong>Date:</strong> Saturday, November 15, 2025<br>
+      <strong>Location:</strong> Student Union – Rincon Room<br>
+      <strong>Format:</strong> 4-round Swiss | Time Control: 15+10</p>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="card">
+      <h2>Registration Form</h2>
+      <p>Please fill out the form below to register. Fields marked * are required.</p>
+
+      <form class="membership-form" id="membership-form" action="#" method="POST">
+        <label for="name">Full Name<span style="color: red">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Full name" required />
+      
+        <label for="email">Email Address<span style="color: red">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@email.com" required />
+      
+        <label for="phone">Phone Number<span style="color: red">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required />
+      
+        <!-- Skill Level -->
+        <label for="skill">Skill Level<span style="color: red">*</span></label>
+        <select id="skill" name="skill" required>
+          <option value="">-- Select --</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      
+        <!-- Attendance Type -->
+        <fieldset>
+          <legend>Attendance Type<span style="color: red">*</span></legend>
+          <div class="option-group">
+            <label><input type="radio" name="attendance" value="In-Person" required /> In-Person</label>
+            <label><input type="radio" name="attendance" value="Virtual" /> Virtual</label>
+          </div>
+        </fieldset>
+      
+        <!-- Accommodations -->
+        <fieldset>
+          <legend>Accommodations</legend>
+          <div class="option-group">
+            <label><input type="checkbox" name="accommodation" value="Dietary Restrictions" /> Dietary Restrictions</label>
+            <label><input type="checkbox" name="accommodation" value="Accessibility Needs" /> Accessibility Needs</label>
+            <label><input type="checkbox" name="accommodation" value="None" /> None</label>
+          </div>
+        </fieldset>
+      
+        <button type="submit" class="btn">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© UA Wildcat Chess Club | <a href="mailto:uachess@arizona.edu">uachess@arizona.edu</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
