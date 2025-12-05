@@ -59,17 +59,17 @@
       <p>Please fill out the form below to register. Fields marked * are required.</p>
 
       <form class="membership-form" id="membership-form" action="#" method="POST">
-        <label for="name">Full Name<span style="color: red">*</span></label>
+        <label for="name">Full Name<span class="required">*</span></label>
         <input type="text" id="name" name="name" placeholder="Full name" required />
       
-        <label for="email">Email Address<span style="color: red">*</span></label>
+        <label for="email">Email Address<span class="required">*</span></label>
         <input type="email" id="email" name="email" placeholder="you@email.com" required />
       
-        <label for="phone">Phone Number<span style="color: red">*</span></label>
+        <label for="phone">Phone Number<span class="required">*</span></label>
         <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required />
       
         <!-- Skill Level -->
-        <label for="skill">Skill Level<span style="color: red">*</span></label>
+        <label for="skill">Skill Level<span class="required">*</span></label>
         <select id="skill" name="skill" required>
           <option value="">-- Select --</option>
           <option value="Beginner">Beginner</option>
@@ -79,7 +79,7 @@
       
         <!-- Attendance Type -->
         <fieldset>
-          <legend>Attendance Type<span style="color: red">*</span></legend>
+          <legend>Attendance Type<span class="required">*</span></legend>
           <div class="option-group">
             <label><input type="radio" name="attendance" value="In-Person" required /> In-Person</label>
             <label><input type="radio" name="attendance" value="Virtual" /> Virtual</label>

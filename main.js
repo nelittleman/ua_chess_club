@@ -26,10 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const forms = document.querySelectorAll("form");
     forms.forEach(form => {
       form.addEventListener("submit", e => {
-        e.preventDefault(); // stops actual submission
-        alert("✅ Your membership form was submitted successfully!");
-        form.reset(); // optional: clears the form
         let valid = true;
+        
         form.querySelectorAll("[required]").forEach(input => {
           if (!input.value.trim()) {
             valid = false;
@@ -38,9 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
             input.style.border = "1px solid #ccc";
           }
         });
+        
         if (!valid) {
           e.preventDefault();
           alert("Please fill in all required fields.");
+        }
+        else{
+            e.preventDefault(); // stops actual submission
+            alert("✅ Your membership form was submitted successfully!");
+            form.reset(); // optional: clears the form
         }
       });
     });
