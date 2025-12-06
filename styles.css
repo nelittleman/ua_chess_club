@@ -178,6 +178,26 @@ img {
 }
 
 /* ----------------------------
+ Homepage Highlights Layout
+----------------------------- */
+.highlights {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 95%;
+  margin: 1rem auto;
+}
+
+.highlights section {
+  flex: 1 1 20%;
+}
+
+.highlights h2 {
+  text-align: center;
+}
+
+/* ----------------------------
    Footer
 ----------------------------- */
 footer {
