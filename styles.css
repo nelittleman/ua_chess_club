@@ -413,9 +413,9 @@ span.required {
   color: #f1f1f1;
 }
 
-/* ----------------------------
-   Membership Form
------------------------------ */
+/* -------------------------------
+   Membership & Tournament Form
+---------------------------------- */
 .membership-form {
   background: #ffffff;
   padding: 2rem;
@@ -434,10 +434,18 @@ span.required {
   display: block;
 }
 
+.required:after {
+  content: " *";
+  color: red;
+}
+.membership-form legend {
+   font-weight: 600;
+}
+
 .membership-form input[type="text"],
 .membership-form input[type="email"],
 .membership-form input[type="tel"] {
-  width: 100%;
+  width: 96%;
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -508,7 +516,14 @@ span.required {
   transform: scale(1.03);
 }
 
+.details {
+  line-height: 2;
+}
 
+#register-now {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 /* ----------------------------
    Volunteer / Resources
 ----------------------------- */
@@ -666,6 +681,7 @@ span.required {
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s, transform 0.2s ease;
+  margin-left: 4px;
 }
 
 .zoom-link:hover {
