@@ -365,10 +365,6 @@ textarea {
   border-radius: 5px;
 }
 
-span.required {
-    color: red;
-}
-
 /* ----------------------------
    Hero Section (Global)
 ----------------------------- */
@@ -524,6 +520,7 @@ span.required {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 /* ----------------------------
    Volunteer / Resources
 ----------------------------- */
